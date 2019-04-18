@@ -1,0 +1,10 @@
+Steps to start kafka server:
+
+1) Start zookeeper 'zkserver'
+2) Start kafka server. Navigate to directory C:\kafka_2.11-0.9.0.0\ and run '.\bin\windows\kafka-server-start.bat .\config\server.properties' from cmd
+3) Create topic. Navigate to C:\kafka_2.11-0.9.0.0\bin\windows and run 'kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic Kafka-Testing' 
+4) Create a producer. Navigate to C:\kafka_2.11-0.9.0.0\bin\windows and run 'kafka-console-producer.bat --broker-list localhost:9092 --topic Kafka-Testing'
+5) Create a consumer. Navigate to C:\kafka_2.11-0.9.0.0\bin\windows and run 'kafka-console-consumer.bat --zookeeper localhost:2181 --topic Kafka-Testing'
+6) Delete a topic. Navigate to C:\kafka_2.11-0.9.0.0\bin\windows and run 'kafka-topics --delete --topic Kafka-Testing --zookeeper localhost:2181'
+7) List topics. Navigate to C:\kafka_2.11-0.9.0.0\bin\windows and run 'kafka-topics.bat --list --zookeeper localhost:2181'
+8) Describe topic. Navigate to C:\kafka_2.11-0.9.0.0\bin\windows and run 'kafka-topics.bat --describe --zookeeper localhost:2181 --topic [Topic Name]'
