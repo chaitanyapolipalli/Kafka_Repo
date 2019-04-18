@@ -1,0 +1,9 @@
+How to fix java.nio.file.AccessDeniedException: kafka exception?
+
+/zookeeperHome/conf/zoo.cfg: file will have data directroy details
+
+tickTime=2000
+dataDir=/var/zookeeper 
+clientPort=2181
+
+Delete files in dataDir folder to fix this error.
