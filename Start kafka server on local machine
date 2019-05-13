@@ -10,6 +10,6 @@ Source: https://kafka.apache.org/quickstart
 6) Delete a topic. kafka-topics --delete --topic Kafka-Testing --zookeeper localhost:2181
 7) List topics. kafka-topics --list --zookeeper localhost:2181
 8) Describe topic. kafka-topics --describe --zookeeper localhost:2181 --topic Kafka-Testing
-
+9) Load data into kafka topic from a file kafka-console-producer --broker-list localhost:9092 --topic jsontopic < C:/Users/Downloads/json/eventData.json
 
 
